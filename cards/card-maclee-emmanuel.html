@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Business Card — Maclee Emmanuel</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f0f0f0; display: flex; gap: 48px; justify-content: center; align-items: flex-start; padding: 60px 40px; font-family: Arial, sans-serif; flex-wrap: wrap; }
+.side-label { font-size: 11px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1.5px; text-transform: uppercase; }
+.card { width: 3.5in; height: 2in; border-radius: 10px; overflow: hidden; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+/* FRONT */
+.card-front { background: #ffffff; display: flex; align-items: center; justify-content: center; }
+/* BACK */
+.card-back { background: #111111; display: flex; }
+.back-left { flex: 1; padding: 20px 18px; display: flex; flex-direction: column; justify-content: space-between; border-right: 0.5px solid #2a2a2a; }
+.back-right { width: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 16px 12px; }
+.back-name { font-family: 'Arial Black', sans-serif; font-size: 14px; font-weight: 900; color: #ffffff; line-height: 1.2; }
+.back-title { font-size: 9px; color: #e05c00; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 3px; }
+.back-divider { height: 1px; background: #e05c00; width: 100%; margin: 6px 0; }
+.back-contact { display: flex; flex-direction: column; gap: 5px; }
+.back-line { font-size: 9px; color: #aaaaaa; }
+.back-line span { color: #dddddd; }
+.qr-box { width: 82px; height: 82px; background: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.scan-label { font-size: 7.5px; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<div>
+  <div class="side-label">Front</div>
+  <div class="card card-front">
+    <svg viewBox="0 0 336 192" xmlns="http://www.w3.org/2000/svg" width="336" height="192">
+      <rect width="336" height="192" fill="#ffffff"/>
+      <text x="10" y="148" font-family="Georgia,serif" font-size="130" font-weight="700" fill="#111" opacity="0.055" letter-spacing="-6">PCR</text>
+      <text x="18" y="78" font-family="Arial Black,sans-serif" font-size="52" font-weight="900" fill="#111111" letter-spacing="-2">PRIME</text>
+      <rect x="18" y="86" width="300" height="2.5" fill="#e05c00"/>
+      <text x="18" y="117" font-family="Arial,sans-serif" font-size="20" font-weight="200" fill="#111111" letter-spacing="14">COASTAL</text>
+      <text x="200" y="117" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#e05c00" letter-spacing="6">RIDES</text>
+      <text x="18" y="143" font-family="Arial,sans-serif" font-size="8.5" fill="#999999" letter-spacing="4">SOUTH FLORIDA  ·  EST. 2026</text>
+      <rect x="0" y="184" width="336" height="8" fill="#e05c00"/>
+    </svg>
+  </div>
+</div>
+
+<div>
+  <div class="side-label">Back</div>
+  <div class="card card-back">
+    <div class="back-left">
+      <div>
+        <div class="back-name">Maclee Emmanuel</div>
+        <div class="back-title">Director of Operations</div>
+      </div>
+      <div>
+        <div class="back-divider"></div>
+        <div class="back-contact">
+          <div class="back-line">📱 <span>954-256-4617</span></div>
+          <div class="back-line">✉️ <span>primecoastalrides@gmail.com</span></div>
+          <div class="back-line">📍 <span>Fort Lauderdale, FL</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="back-right">
+      <div class="qr-box">
+        <div id="qr1"></div>
+      </div>
+      <div class="scan-label">Scan me</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+new QRCode(document.getElementById('qr1'), {
+  text: 'https://primecoastalrides.com',
+  width: 74, height: 74,
+  colorDark: '#111111', colorLight: '#ffffff',
+  correctLevel: QRCode.CorrectLevel.H
+});
+</script>
+</body>
+</html>

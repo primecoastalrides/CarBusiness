@@ -52,6 +52,13 @@ nav {
   display: block;
 }
 
+.hero-logo {
+  width: 420px;
+  max-width: 90%;
+  margin: 0 auto 28px;
+  display: block;
+}
+
 .nav-logo {
   font-size: 1.2rem;
   font-weight: 700;
