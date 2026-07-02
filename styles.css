@@ -275,6 +275,20 @@ section {
   justify-content: center;
   color: var(--gray);
   font-size: 0.85rem;
+  position: relative;
+}
+
+.stock-photo-tag {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
 }
 
 .car-img svg {
@@ -331,6 +345,11 @@ section {
 .badge-pending {
   background: #fff7e6;
   color: #b45309;
+}
+
+.badge-coming-soon {
+  background: #eef2ff;
+  color: #4338ca;
 }
 
 .car-info h3 {

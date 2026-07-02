@@ -42,6 +42,7 @@
         <button onclick="setStatus('all')" class="filter-btn stat-btn active" id="stat-all">All</button>
         <button onclick="setStatus('available')" class="filter-btn stat-btn" id="stat-available">Available</button>
         <button onclick="setStatus('pending')" class="filter-btn stat-btn" id="stat-pending">Pending</button>
+        <button onclick="setStatus('coming-soon')" class="filter-btn stat-btn" id="stat-coming-soon">Coming Soon</button>
         <button onclick="setStatus('sold')" class="filter-btn stat-btn" id="stat-sold">Sold</button>
       </div>
     </div>
@@ -69,99 +70,6 @@
 
   <section>
     <div class="fleet-grid" id="inventory-grid" style="max-width: 1100px; margin: 0 auto;">
-
-      <!-- CARS -->
-      <div class="car-card" data-category="car" data-status="available">
-        <div class="car-img">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 36l6-16h36l6 16" stroke="#999" stroke-width="2"/>
-            <rect x="4" y="36" width="56" height="14" rx="3" stroke="#999" stroke-width="2"/>
-            <circle cx="16" cy="52" r="5" stroke="#999" stroke-width="2"/>
-            <circle cx="48" cy="52" r="5" stroke="#999" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="car-info">
-          <span class="car-badge badge-available">Available</span><span class="type-tag">Car</span>
-          <h3>Your Car Name Here</h3>
-          <div class="car-specs">
-            <span class="car-spec">📅 Year</span>
-            <span class="car-spec">🛣 Mileage</span>
-            <span class="car-spec">🎨 Color</span>
-          </div>
-          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">Condition note — e.g. runs well, minor cosmetic wear</div>
-          <div class="car-price">$0,000</div>
-          <a href="contact.html" class="car-cta">I'm Interested</a>
-        </div>
-      </div>
-
-      <div class="car-card" data-category="car" data-status="available">
-        <div class="car-img">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 36l6-16h36l6 16" stroke="#999" stroke-width="2"/>
-            <rect x="4" y="36" width="56" height="14" rx="3" stroke="#999" stroke-width="2"/>
-            <circle cx="16" cy="52" r="5" stroke="#999" stroke-width="2"/>
-            <circle cx="48" cy="52" r="5" stroke="#999" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="car-info">
-          <span class="car-badge badge-available">Available</span><span class="type-tag">Car</span>
-          <h3>Your Car Name Here</h3>
-          <div class="car-specs">
-            <span class="car-spec">📅 Year</span>
-            <span class="car-spec">🛣 Mileage</span>
-            <span class="car-spec">🎨 Color</span>
-          </div>
-          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">Brief condition note</div>
-          <div class="car-price">$0,000</div>
-          <a href="contact.html" class="car-cta">I'm Interested</a>
-        </div>
-      </div>
-
-      <div class="car-card" data-category="car" data-status="pending">
-        <div class="car-img">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 36l6-16h36l6 16" stroke="#999" stroke-width="2"/>
-            <rect x="4" y="36" width="56" height="14" rx="3" stroke="#999" stroke-width="2"/>
-            <circle cx="16" cy="52" r="5" stroke="#999" stroke-width="2"/>
-            <circle cx="48" cy="52" r="5" stroke="#999" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="car-info">
-          <span class="car-badge badge-pending">Pending</span><span class="type-tag">Car</span>
-          <h3>Your Car Name Here</h3>
-          <div class="car-specs">
-            <span class="car-spec">📅 Year</span>
-            <span class="car-spec">🛣 Mileage</span>
-            <span class="car-spec">🎨 Color</span>
-          </div>
-          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">Brief condition note</div>
-          <div class="car-price">$0,000</div>
-          <a href="contact.html" class="car-cta">Ask About This Car</a>
-        </div>
-      </div>
-
-      <div class="car-card" data-category="car" data-status="sold">
-        <div class="car-img" style="opacity: 0.5;">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 36l6-16h36l6 16" stroke="#999" stroke-width="2"/>
-            <rect x="4" y="36" width="56" height="14" rx="3" stroke="#999" stroke-width="2"/>
-            <circle cx="16" cy="52" r="5" stroke="#999" stroke-width="2"/>
-            <circle cx="48" cy="52" r="5" stroke="#999" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="car-info">
-          <span class="car-badge badge-sold">Sold</span><span class="type-tag">Car</span>
-          <h3>Your Car Name Here</h3>
-          <div class="car-specs">
-            <span class="car-spec">📅 Year</span>
-            <span class="car-spec">🛣 Mileage</span>
-            <span class="car-spec">🎨 Color</span>
-          </div>
-          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">Brief condition note</div>
-          <div class="car-price" style="color: var(--gray);">Sold</div>
-          <span class="car-cta" style="opacity:0.4; cursor:default;">No Longer Available</span>
-        </div>
-      </div>
 
       <!-- BIKES -->
       <div class="car-card" data-category="bike" data-status="available">
@@ -206,7 +114,7 @@
         </div>
         <div class="car-info">
           <span class="car-badge badge-available">Available</span><span class="type-tag">Bike</span>
-          <h3>Cruiser — Add Model</h3>
+          <h3>Custom Blue Cruiser</h3>
           <div class="car-specs">
             <span class="car-spec">📅 Year</span>
             <span class="car-spec">🛣 Mileage</span>
@@ -218,9 +126,114 @@
         </div>
       </div>
 
+      <!-- COMING SOON — FROM IMPOUND -->
+      <div class="car-card" data-category="car" data-status="coming-soon">
+        <div class="car-img">
+          <img src="images/toyota-tacoma-grey.jpg" alt="Grey Toyota Tacoma (stock photo)" style="width:100%; height:100%; object-fit:cover;" />
+          <span class="stock-photo-tag">Stock Photo</span>
+        </div>
+        <div class="car-info">
+          <span class="car-badge badge-coming-soon">Coming Soon</span><span class="type-tag">Truck</span>
+          <h3>Toyota Tacoma</h3>
+          <div class="car-specs">
+            <span class="car-spec">📅 ~2018 (TBD)</span>
+            <span class="car-spec">🎨 Grey</span>
+          </div>
+          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">
+            Just acquired — full details, mileage, and real photos coming soon.
+          </div>
+          <div class="car-price" style="color: var(--gray);">Details Coming Soon</div>
+          <a href="contact.html" class="car-cta">Ask About This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="car" data-status="coming-soon">
+        <div class="car-img">
+          <img src="images/genesis-g80-black.jpg" alt="Black Genesis G80 (stock photo)" style="width:100%; height:100%; object-fit:cover;" />
+          <span class="stock-photo-tag">Stock Photo</span>
+        </div>
+        <div class="car-info">
+          <span class="car-badge badge-coming-soon">Coming Soon</span><span class="type-tag">Car</span>
+          <h3>Genesis G80</h3>
+          <div class="car-specs">
+            <span class="car-spec">📅 Year TBD</span>
+            <span class="car-spec">🎨 Black</span>
+          </div>
+          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">
+            Just acquired — full details, mileage, and real photos coming soon.
+          </div>
+          <div class="car-price" style="color: var(--gray);">Details Coming Soon</div>
+          <a href="contact.html" class="car-cta">Ask About This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="car" data-status="coming-soon">
+        <div class="car-img">
+          <img src="images/chevy-cruze-silver.jpg" alt="Chevrolet Cruze, dark color shown — actual car is silver (stock photo)" style="width:100%; height:100%; object-fit:cover;" />
+          <span class="stock-photo-tag">Stock Photo</span>
+        </div>
+        <div class="car-info">
+          <span class="car-badge badge-coming-soon">Coming Soon</span><span class="type-tag">Car</span>
+          <h3>2007 Chevrolet Cruze</h3>
+          <div class="car-specs">
+            <span class="car-spec">📅 2007</span>
+            <span class="car-spec">🎨 Silver</span>
+          </div>
+          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">
+            Just acquired — full details, mileage, and real photos coming soon.
+          </div>
+          <div class="car-price" style="color: var(--gray);">Details Coming Soon</div>
+          <a href="contact.html" class="car-cta">Ask About This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="car" data-status="coming-soon">
+        <div class="car-img">
+          <img src="images/honda-accord-black-2018.jpg" alt="Black Honda Accord (stock photo)" style="width:100%; height:100%; object-fit:cover;" />
+          <span class="stock-photo-tag">Stock Photo</span>
+        </div>
+        <div class="car-info">
+          <span class="car-badge badge-coming-soon">Coming Soon</span><span class="type-tag">Car</span>
+          <h3>2018 Honda Accord</h3>
+          <div class="car-specs">
+            <span class="car-spec">📅 2018</span>
+            <span class="car-spec">🎨 Black</span>
+          </div>
+          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">
+            Just acquired — full details, mileage, and real photos coming soon.
+          </div>
+          <div class="car-price" style="color: var(--gray);">Details Coming Soon</div>
+          <a href="contact.html" class="car-cta">Ask About This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="car" data-status="coming-soon">
+        <div class="car-img">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 36l6-16h36l6 16" stroke="#999" stroke-width="2"/>
+            <rect x="4" y="36" width="56" height="14" rx="3" stroke="#999" stroke-width="2"/>
+            <circle cx="16" cy="52" r="5" stroke="#999" stroke-width="2"/>
+            <circle cx="48" cy="52" r="5" stroke="#999" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="car-info">
+          <span class="car-badge badge-coming-soon">Coming Soon</span><span class="type-tag">Car</span>
+          <h3>2003 Honda Accord</h3>
+          <div class="car-specs">
+            <span class="car-spec">📅 2003</span>
+            <span class="car-spec">🎨 Gold</span>
+          </div>
+          <div style="font-size:0.82rem; color: var(--gray); margin-top: 8px;">
+            Just acquired — full details, mileage, and real photos coming soon.
+          </div>
+          <div class="car-price" style="color: var(--gray);">Details Coming Soon</div>
+          <a href="contact.html" class="car-cta">Ask About This Car</a>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Empty state -->
+      <!-- Empty state -->
     <div id="empty-state" style="display:none; text-align:center; padding: 60px 20px; color: var(--gray);">
       <div style="font-size: 2rem; margin-bottom: 12px;">🔍</div>
       <p>Nothing in this category right now. Check back soon or <a href="contact.html" style="color: var(--accent);">contact us</a>.</p>
