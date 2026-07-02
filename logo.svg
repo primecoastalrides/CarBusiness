@@ -1,0 +1,38 @@
+<svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Prime Coastal Rides Logo</title>
+  <rect width="680" height="220" fill="#ffffff"/>
+
+  <!-- PCR ghost monogram -->
+  <text x="30" y="165"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="160" font-weight="700"
+        fill="#111111" letter-spacing="-8"
+        opacity="0.06">PCR</text>
+
+  <!-- PRIME -->
+  <text x="38" y="102"
+        font-family="'Arial Black', 'Helvetica Neue', sans-serif"
+        font-size="72" font-weight="900"
+        fill="#111111" letter-spacing="-3">PRIME</text>
+
+  <!-- Orange line -->
+  <rect x="38" y="112" width="604" height="3" fill="#e05c00"/>
+
+  <!-- COASTAL -->
+  <text x="40" y="152"
+        font-family="'Arial', sans-serif"
+        font-size="28" font-weight="300"
+        fill="#111111" letter-spacing="18">COASTAL</text>
+
+  <!-- RIDES -->
+  <text x="306" y="152"
+        font-family="'Arial Black', sans-serif"
+        font-size="28" font-weight="900"
+        fill="#e05c00" letter-spacing="10">RIDES</text>
+
+  <!-- Tagline -->
+  <text x="40" y="186"
+        font-family="'Arial', sans-serif"
+        font-size="11" font-weight="400"
+        fill="#999999" letter-spacing="5">SOUTH FLORIDA  ·  EST. 2026</text>
+</svg>
