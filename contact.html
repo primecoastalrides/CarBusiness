@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Prime Coastal Rides</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Prime Coastal<span> Rides</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="section-label">We respond same day</div>
+    <h1>Get in Touch</h1>
+    <p>Have a question about a car? Want to schedule a viewing? Send us a message.</p>
+  </div>
+
+  <section>
+    <div class="contact-wrap">
+
+      <!-- Contact info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div class="ci-label">Location</div>
+          <div class="ci-value">Fort Lauderdale, FL</div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📱</div>
+          <div class="ci-label">Phone / Text</div>
+          <div class="ci-value">954-256-4617</div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div class="ci-label">Email</div>
+          <div class="ci-value">primecoastalrides@gmail.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🕐</div>
+          <div class="ci-label">Response time</div>
+          <div class="ci-value">Same day</div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form" action="https://formspree.io/f/xjgqaqzd" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(954) 000-0000" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">What's this about?</label>
+          <select id="subject">
+            <option value="">Select a reason...</option>
+            <option value="interested">I'm interested in a specific car</option>
+            <option value="interested-bike">I'm interested in a specific bike</option>
+            <option value="request">I'm looking for a specific car or bike</option>
+            <option value="viewing">I want to schedule a viewing</option>
+            <option value="question">General question</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us what you're looking for, what car you're interested in, or any questions you have..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send Message →</button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Prime Coastal<span> Rides</span></div>
+    <p>© 2026 Prime Coastal Rides · South Florida</p>
+    <p><a href="contact.html" style="color: var(--gray);">Contact</a></p>
+  </footer>
+
+
+</body>
+</html>
