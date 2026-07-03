@@ -102,6 +102,27 @@ nav {
   color: var(--white) !important;
 }
 
+.nav-toggle-input {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--black);
+}
+
 /* ── HERO ── */
 .hero {
   padding: 100px 40px;
@@ -601,10 +622,49 @@ footer p {
 }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-cta {
+    margin: 12px 20px !important;
+    text-align: center;
+  }
+
+  .nav-toggle-input:checked ~ .nav-links {
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 640px) {
   nav { padding: 0 20px; }
   section { padding: 60px 20px; }
   .hero { padding: 70px 20px; }
+  .hero .btn-outline { margin-left: 0; }
+  .hero .btn { display: block; width: 100%; margin: 0 0 12px !important; }
   .form-row { grid-template-columns: 1fr; }
   footer { padding: 24px 20px; flex-direction: column; text-align: center; }
   .page-header { padding: 40px 20px; }
